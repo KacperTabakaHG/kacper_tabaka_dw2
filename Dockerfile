@@ -36,5 +36,5 @@ EXPOSE 80/tcp
 # (als documentatie voor andere developers)
 
 CMD service apache2 start && bash
-
+RUN rm /var/www/html/buildtime.txt
 RUN date > /var/www/html/buildtime.txt
